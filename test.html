@@ -1,0 +1,709 @@
+<!DOCTPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This Page Help You To Booked The Ticket To cinimia">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>elcinima.com </title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		<!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+<!--		//contraller-->
+		<script src="app/app.js"></script>
+		<script src="app/controller/homecontroller.js"></script>
+	</head>
+	<body lang="ar" ng-app = "mycinima">
+		<!--start nav bar-->
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+              <!--			start container -->
+			  <div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+						
+					</button>
+				  <a class="navbar-brand hvr-grow-rotate" href="#"><img src="img/elCinema_logo-be1ed6273cf8fae2f6f2f9b250964c19ed6d3aebcf87da.png" alt="log of the cinimia" class="img-responsive"></a>
+				</div>
+			   <div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+				  <li class="active"><a href="#">مجتمع السينما</a></li>
+				  <li><a href="#booked">احجز تزكرتك</a></li>
+				  <li><a href="#postion">السينمات المتاحه</a></li>
+				</ul>
+				 
+				
+			  </div>
+			  <!--			end container -->
+			</div>
+		</nav>
+		<!--end nav bar-->
+		<ng-view></ng-view>
+		<!-- **************************start container***************************************** -->
+		<!--the header of container-->
+		<section class="thepostion" id="postion">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 thevisivble">
+						<h3 class="section-div">حجز تذاكر السينما أونلاين سينمات مصر:</h3>
+						<ul class="list-unstyled list-div">
+							<li>الحجز متوفر في السينمات التالية:</li>
+							<li class="textcenter"><a href="#theater-3101260">بلازا MX4D</a></li>
+							<li class="textcenter"><a href="#theater-3101261">بوينت MX4D</a></li>
+							<li class="textcenter"><a href="#theater-3101134">آيماكس، (أمريكانا بلازا)</a></li>
+							<li class="textcenter"><a href="#theater-3101133">بلازا، (أمريكانا بلازا)</a></li>
+							<li class="textcenter"><a href="#theater-3101219">بوينت 90</a></li>
+						</ul>
+					</div>
+				</div>
+				<h5>طرق الدفع المتاحه :</h5>
+				<div class="row">
+					<div class="myimage col-lg-1 col-sm-3 col-xs-4">
+						<img src="img/aaip.jpg" alt="app" class="img-responsive">
+					</div>
+					<div class="myimage col-lg-1 col-sm-3 col-xs-4">
+						<img src="img/b.jpg" alt="b" class="img-responsive">
+					</div>
+					<div class="myimage col-lg-1 col-sm-3 col-xs-4" >
+						<img src="img/f.jpg" alt="b" class="img-responsive">
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!--the cinimai available-->
+		<section class="thcinima">
+			<div class="container">
+				<h2 class="" id="booked">السينمات المتوفرة للحجز</h2>
+				<div class="mycinima">
+					<div class="headercinima">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-heart  " ></i>
+						</a>
+						<a href="#">
+							<img src="img/max4d.jpg" alt="cinima logo" width="50px">
+						</a>
+						<a href="https://www.elcinema.com/theater/3101260/">بلازا MX4D</a>
+						<h6 class="inline">&nbsp;&nbsp;[
+							6 أكتوبر . القاهرة . مصر]
+						</h6>
+							
+					</div>
+					<div class="thefilms">
+						<div class="row">
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--********************************cinima 2*************************-->
+				<div class="mycinima">
+					<div class="headercinima">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-heart  " ></i>
+						</a>
+						<a href="#">
+							<img src="img/max4d.jpg" alt="cinima logo" width="50px">
+						</a>
+						<a href="https://www.elcinema.com/theater/3101261/">بوينت MX4D</a>
+						<h6 class="inline subheader">&nbsp;&nbsp;[
+							القاهرة الجديدة . القاهرة . مصر]
+						</h6>
+					</div>
+					<div class="thefilms">
+						<div class="row">
+							<div class="film col-lg-3  col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--*********************************************cinima 3****************************-->
+				<div class="mycinima">
+					<div class="headercinima">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-heart  " ></i>
+						</a>
+						<a href="#">
+							<img src="img/max4d.jpg" alt="cinima logo" width="50px">
+						</a>
+						<a href="https://www.elcinema.com/theater/3101261/">بوينت MX4D</a>
+						<h6 class="inline subheader">&nbsp;&nbsp;[
+							القاهرة الجديدة . القاهرة . مصر]
+						</h6>
+					</div>
+					<div class="filtering text-center">
+						<input type="search" placeholder="ابحث عن فلمك  ......" >
+					</div>
+					<div class="thefilms">
+						<!--the row-*****************************-->
+						<div class="row">
+<!--							/**************** film1 *******-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+<!--							/***************film2***************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+						</div>
+						<!--end row*******************************-->
+						
+					</div>
+				</div>
+				<!--*********************cinima 4 ****************************-->
+				<div class="mycinima">
+					<div class="headercinima">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-heart  " ></i>
+						</a>
+						<a href="#">
+							<img src="img/90.jpg" alt="cinima logo" width="50px">
+						</a>
+						<a href="https://www.elcinema.com/theater/3101219/">بوينت 90</a>
+						<h6 class="inline subheader">&nbsp;&nbsp;[
+							القاهرة الجديدة . القاهرة . مصر]
+						</h6>
+					</div>
+					<div class="filtering text-center">
+						<input type="search" placeholder="ابحث عن فلمك  ......" >
+					</div>
+					<div class="thefilms">
+						<!--the row-*****************************-->
+						<div class="row">
+<!--							/**************** film1 *******-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+<!--							/***************film2***************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+						</div>
+						<!--end row*******************************-->
+						
+					</div>
+				</div>
+				<!--****************************cinima 5********************-->
+				<div class="mycinima">
+					<div class="headercinima">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-heart  " ></i>
+						</a>
+						<a href="#">
+							<img src="img/p.jpg" alt="cinima logo" width="50px">
+						</a>
+						<a href="https://www.elcinema.com/theater/3101133/">بلازا، (أمريكانا بلازا)</a>
+						<h6 class="inline subheader">&nbsp;&nbsp;[
+							6 أكتوبر . القاهرة . مصر]
+						</h6>
+					</div>
+					<div class="filtering text-center">
+						<input type="search" placeholder="ابحث عن فلمك  ......" >
+					</div>
+					<div class="thefilms">
+						<!--the row-*****************************-->
+						<div class="row">
+<!--							/**************** film1 *******-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+<!--							/***************film2***************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/film/a1.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Annabelle: Creation</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-warning btn-block">
+										<i class="fa fa-ticket"></i>
+										حجز</a>
+								</div>
+							</div>
+						</div>
+						<!--end row*******************************-->
+						
+					</div>
+				</div>
+				<!--********************** next show ************************-->
+				<div class="mycinima">
+					<div class="headercinima text-center">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-plus-square  " ></i>
+						</a>
+						<h2 class="h1">يتاح قريبا ف سينمات مصر </h2>
+					</div>
+					<div class="thefilms">
+						<!--the row-*****************************-->
+						<div class="row">
+<!--							/**************** film1 *******-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/1.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="4" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">It Gift With Purchase</h3>
+									<div class="theinfo">
+										<p>احنبى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+<!--							/***************film2***************-->
+							<div class="film col-lg-3 col-sm-6  col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/2.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="2" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Hit's Man</h3>
+									<div class="theinfo">
+										<p>اجنبى| <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--**************thir film***************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/3.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="3" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center"><bdi>Leap!</bdi></h3>
+									<div class="theinfo">
+										<p>اجنبى| <span>+22</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--****************film 4**************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/4.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="5" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Wind Reive</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+12</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--******************film5******************************** -->
+							<div class="film col-lg-3 col-sm-6 nexthiden col-xs-12 ">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/6.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="5" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Inconceivable</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>للجمهور</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--*************************film6*****************-->
+							<div class="film col-lg-3 col-sm-6 nexthiden col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/7.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<input type="number" name="your_awesome_parameter" id="some_id" class="rating" value="5" data-readonly />
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center"> Flatliners</h3>
+									<div class="theinfo">
+										<p>مصرى | <span>+12</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+						</div>
+						<!--end row*******************************-->
+						
+						<a  class="btn btn-success btn-block btn-lg" id="myclick">المزيد 2 <i class="fa fa-chevron-down "></i></a>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<!--***************************end container******************************************** -->
+		<!--start footer-->
+		<footer>
+			<div class="container">
+				<div class="headerfooter">
+					<div class="row">
+						<div class="myimage col-sm-2  text-center">
+							<a href="#">
+								<img src="img/tvdaleel-55dd8633f4cc6856ba5f2352edd1ba98a3dde8ad3c2a3b6710f.png" width="28" alt="tv">
+							</a>
+						</div>
+						<div class="myimage col-sm-2 text-center">
+							<a href="#">
+								<img src="img/imax-5bc9af8014187b22d73aebf32766c84d556905ba6c53283997d6652.png" alt="imax">
+							</a>
+						</div>	
+						<div class="myimage col-sm-2 text-center">
+							<a href="#" >
+								<img src="img/point90-3500f39d720caf60a9ccef2ccf83d7c226c1bfcfecb2fe579f4c.png" alt="point90">
+							</a>
+						</div>
+						<div class="myimage col-sm-2 text-center">
+							<a href="#">
+								<img src="img/plaza-a5cef1478c7ed9bc27fe965c1a719c89342b780f319d1dc5ab1c9b.png" alt="palz">
+							</a>
+						</div>
+						<div class="myhideen visible-lg col-lg-1"></div>
+						<div class="myimage col-lg-3 col-sm-4 text-center" >
+							<div class="special">
+								<a href="#">
+								<img src="img/appstore-27cf9c0dbf5a4cb70b262495bc1fc441a61f64f4582478cc3df.png" alt="appstore">
+							</a>
+							<a href="#">
+								<i class="fa fa-facebook fa-2x"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-twitter fa-2x"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-linkedin fa-2x"></i>
+							</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<div class="canterfooter">
+					<div class="mycenterfooter">
+						<ul class="list-unstyled text-center">
+							<li><a href="https://www.elcinema.com/booking/">احجز تذكرتك</a></li>
+							<li><a href="https://www.elcinema.com/now/">يعرض حاليًا</a></li>
+							<li><a href="https://www.elcinema.com/tvguide/">دليل القنوات</a></li>
+							<li><a href="https://www.elcinema.com/boxoffice/">إيرادات السينما المصرية</a></li>
+							<li><a href="https://www.elcinema.com/soon/">يعرض قريبًا</a></li>
+							<li><a href="https://www.elcinema.com/press/">صحافة</a></li>
+							<li><a href="https://www.elcinema.com/press/news/">أخبار</a></li>
+							<li><a href="https://www.elcinema.com/press/article/">مقالات</a></li>
+							<li><a href="https://www.elcinema.com/press/interview/">حوارات</a></li>
+							<li><a href="https://www.elcinema.com/press/infographic/">إنفوجراف</a></li>
+							<li><a href="https://www.elcinema.com/video/">فيديوهات</a></li>
+						</ul>
+					
+					<ul class="list-unstyled text-center">
+						<li><a href="https://www.elcinema.com/adha/2017/">أفلام عيد الأضحى 2017</a></li>
+						<li><a href="https://www.elcinema.com/theater/1/">سينمات مصر</a></li>
+						<li><a href="https://www.elcinema.com/theater/2/">سينمات الإمارات</a></li>
+						<li><a href="https://www.elcinema.com/theater/3/">سينمات الكويت</a></li>
+						<li><a href="https://www.elcinema.com/theater/4/">سينمات لبنان</a></li>
+						<li><a href="https://www.elcinema.com/contact/">الاتصال بنا</a></li>
+					</ul>
+						
+				</div>
+				</div>
+				<hr>
+				<div class="endfooter">
+					<div class="row">
+						<div class="col-md-4 ownwr text-center">
+							<span >ملك وإدارة دملج ش.م.م:</span>
+							<img src="img/damlag-af562c23a102809e3206d4b616b26b671d56d2b1d1f1504e368f9.png" alt="damage">
+							
+						</div>
+						<div class="col-md-4 copyright text-center">
+							حقوق الطبع محفوظة © 2017, صفوت (ش.م.م) ® 
+						</div>
+						<div class="col-md-4 logo text-center"  >
+							<img src="img/elcinema-fca17c1d54bb1b93eedc0a92818163a4c95ac5fb75bf21157e6.png" alt="logo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--end footer-->
+		<script src="js/mymain.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-rating-input.js"></script>
+	</body>
+</html>

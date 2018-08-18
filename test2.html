@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<style>
+			div{
+				background: red;
+				color: #fff;
+				text-align: center;
+				line-height: 100px;
+				height: 100px;
+				width: 400px;
+				margin: 20 auto;
+				
+			}
+		</style>
+		<script src="js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div >
+			this is div to click for hide
+		</div>
+		<div >
+			this div have affect feedout
+		</div>
+		<script>
+			var ee = $("div")
+			var ee2 = $("div:last-of-type")
+			ee.click(function(){
+				$(this).hide(1000,function () {
+				"use strict";
+				alert("hide");
+			})
+			})
+			ee2.fadeOut(5000);
+			
+		</script>
+	</body>
+</html>

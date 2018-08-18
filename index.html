@@ -1,0 +1,163 @@
+<!DOCTPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This Page Help You To Booked The Ticket To cinimia">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>elcinima.com </title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		<!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/jquery-1.11.1.min.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-rating-input.js"></script>
+
+		<script src="js/mymain.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+
+        <script src="js/angular-resource.min.js"></script>
+<!--		//contraller-->
+		<script src="app/app.js"></script>
+		<script src="app/controller/homecontroller.js"></script>
+		<script src="app/controller/infocontroller.js"></script>
+        <script src="app/controller/chechedcontroller.js"></script>
+        <script src="js/angular-resource.min.js"></script>
+
+
+    </head>
+	<body lang="ar" ng-app = "mycinima">
+		<!--start nav bar-->
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" ng-controller ="myctrl">
+              <!--			start container -->
+			  <div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+						
+					</button>
+				  <a class="navbar-brand hvr-grow-rotate" href="#"><img src="img/elCinema_logo-be1ed6273cf8fae2f6f2f9b250964c19ed6d3aebcf87da.png" alt="log of the cinimia" class="img-responsive"></a>
+				</div>
+			   <div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+				  <li class="active"><a href="#">مجتمع السينما</a></li>
+				  <li><a href="#" id="first" >احجز تزكرتك</a></li>
+				  <li><a href="#" id="secnd">السينمات المتاحه</a></li>
+				</ul>
+				 
+				
+			  </div>
+			  <!--			end container -->
+			</div>
+		</nav>
+		<!--end nav bar-->
+		<ng-view>
+		</ng-view>
+
+		
+		<!--***************************end container******************************************** -->
+		<!--start footer-->
+		<footer>
+			<div class="container">
+				<div class="headerfooter">
+					<div class="row">
+						<div class="myimage col-sm-2 col-xs-12  text-center">
+							<a href="#">
+								<img src="img/tvdaleel-55dd8633f4cc6856ba5f2352edd1ba98a3dde8ad3c2a3b6710f.png" width="28" alt="tv">
+							</a>
+						</div>
+						<div class="myimage col-sm-2 col-xs-12 text-center">
+							<a href="#">
+								<img src="img/imax-5bc9af8014187b22d73aebf32766c84d556905ba6c53283997d6652.png" alt="imax">
+							</a>
+						</div>	
+						<div class="myimage col-sm-2 col-xs-12 text-center">
+							<a href="#" >
+								<img src="img/point90-3500f39d720caf60a9ccef2ccf83d7c226c1bfcfecb2fe579f4c.png" alt="point90">
+							</a>
+						</div>
+						<div class="myimage col-sm-2 col-xs-12 text-center">
+							<a href="#">
+								<img src="img/plaza-a5cef1478c7ed9bc27fe965c1a719c89342b780f319d1dc5ab1c9b.png" alt="palz">
+							</a>
+						</div>
+						<div class="myhideen visible-lg col-lg-1"></div>
+						<div class="myimage col-lg-3 col-sm-4 col-xs-12 text-center" >
+							<div class="special">
+								<a href="#">
+								<img src="img/appstore-27cf9c0dbf5a4cb70b262495bc1fc441a61f64f4582478cc3df.png" alt="appstore">
+							</a>
+							<a href="#">
+								<i class="fa fa-facebook fa-2x"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-twitter fa-2x"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-linkedin fa-2x"></i>
+							</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<div class="canterfooter">
+					<div class="mycenterfooter">
+						<ul class="list-unstyled text-center">
+							<li><a href="https://www.elcinema.com/booking/">احجز تذكرتك</a></li>
+							<li><a href="https://www.elcinema.com/now/">يعرض حاليًا</a></li>
+							<li><a href="https://www.elcinema.com/tvguide/">دليل القنوات</a></li>
+							<li><a href="https://www.elcinema.com/boxoffice/">إيرادات السينما المصرية</a></li>
+							<li><a href="https://www.elcinema.com/soon/">يعرض قريبًا</a></li>
+							<li><a href="https://www.elcinema.com/press/">صحافة</a></li>
+							<li><a href="https://www.elcinema.com/press/news/">أخبار</a></li>
+							<li><a href="https://www.elcinema.com/press/article/">مقالات</a></li>
+							<li><a href="https://www.elcinema.com/press/interview/">حوارات</a></li>
+							<li><a href="https://www.elcinema.com/press/infographic/">إنفوجراف</a></li>
+							<li><a href="https://www.elcinema.com/video/">فيديوهات</a></li>
+						</ul>
+					
+					<ul class="list-unstyled text-center">
+						<li><a href="https://www.elcinema.com/adha/2017/">أفلام عيد الأضحى 2017</a></li>
+						<li><a href="https://www.elcinema.com/theater/1/">سينمات مصر</a></li>
+						<li><a href="https://www.elcinema.com/theater/2/">سينمات الإمارات</a></li>
+						<li><a href="https://www.elcinema.com/theater/3/">سينمات الكويت</a></li>
+						<li><a href="https://www.elcinema.com/theater/4/">سينمات لبنان</a></li>
+						<li><a href="https://www.elcinema.com/contact/">الاتصال بنا</a></li>
+					</ul>
+						
+				</div>
+				</div>
+				<hr>
+				<div class="endfooter">
+					<div class="row">
+						<div class="col-md-4 ownwr text-center">
+							<span >ملك وإدارة دملج ش.م.م:</span>
+							<img src="img/damlag-af562c23a102809e3206d4b616b26b671d56d2b1d1f1504e368f9.png" alt="damage">
+							
+						</div>
+						<div class="col-md-4 copyright text-center">
+							حقوق الطبع محفوظة © 2017, صفوت (ش.م.م) ® 
+						</div>
+						<div class="col-md-4 logo text-center"  >
+							<img src="img/elcinema-fca17c1d54bb1b93eedc0a92818163a4c95ac5fb75bf21157e6.png" alt="logo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--end footer-->
+		<script src="js/mymain.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-rating-input.js"></script>
+	</body>
+</html>

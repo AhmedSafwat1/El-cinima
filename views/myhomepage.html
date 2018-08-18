@@ -1,0 +1,480 @@
+<!--********************* start home view 1*************************-->
+<!--the header of container-->
+		<section class="thepostion" id="postion">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 thevisivble">
+						<h3 class="section-div">حجز تذاكر السينما أونلاين سينمات مصر:</h3>
+						<ul class="list-unstyled list-div">
+							<li>الحجز متوفر في السينمات التالية:</li>
+							<li class="textcenter"><a href="#theater-3101260">بلازا MX4D</a></li>
+							<li class="textcenter"><a href="#theater-3101261">بوينت MX4D</a></li>
+							<li class="textcenter"><a href="#theater-3101134">آيماكس، (أمريكانا بلازا)</a></li>
+							<li class="textcenter"><a href="#theater-3101133">بلازا، (أمريكانا بلازا)</a></li>
+							<li class="textcenter"><a href="#theater-3101219">بوينت 90</a></li>
+						</ul>
+					</div>
+				</div>
+				<h5>طرق الدفع المتاحه :</h5>
+				<div class="row">
+					<div class="myimage col-lg-1 col-sm-3 col-xs-4">
+						<img src="img/aaip.jpg" alt="app" class="img-responsive">
+					</div>
+					<div class="myimage col-lg-1 col-sm-3 col-xs-4">
+						<img src="img/b.jpg" alt="b" class="img-responsive">
+					</div>
+					<div class="myimage col-lg-1 col-sm-3 col-xs-4" >
+						<img src="img/f.jpg" alt="b" class="img-responsive">
+					</div>
+				</div>
+				
+			</div>
+		</section>
+        <!--the cinimai available-->
+		<section class="thcinima">
+					<div class="container">
+						<h2 class="" id="booked">السينمات المتوفرة للحجز</h2>
+						<!--******************** cinima1*********************-->
+						<div class="mycinima">
+							<!--****************header cinima 1**************-->
+							<div class="headercinima">
+								<a href="#" div="اضف الى المفضل">
+									<i class="fa fa-heart  " ></i>
+								</a>
+								<a href="#">
+									<img src="img/max4d.jpg" alt="cinima logo" width="50px">
+								</a>
+								<a href="https://www.elcinema.com/theater/3101260/">بلازا MX4D</a>
+								<h6 class="inline">&nbsp;&nbsp;[
+									6 أكتوبر . القاهرة . مصر]
+								</h6>
+							</div>
+							<!--***************start the films in cinima 1***************-->
+							<div class="thefilms">
+								<!--*************starty loop Anglar cininma 1 ***********-->
+								<div class="row" >
+									<div class="film col-lg-3 col-sm-6 col-xs-12" ng-repeat="c1 in cinima1">
+										<div class="testfix">
+											<div class="img text-center">
+												<div class="thetest">
+													<img ng-src={{c1.img}} alt="anable" >
+													<div class="myhiddenhover text-center">
+														<div class="theheaer">
+															<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+														</div>
+														<div class="thecenter">
+															<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+														</div>
+														<div class="starrate">
+															<span>{{c1.rate}}</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h3 class="text-center">{{c1.namefilm}}</h3>
+											<div class="theinfo">
+												<p>{{c1.nation}} | <span>{{c1.limitage}}</span></p>
+											</div>
+											<a href="#/info/{{c1.idcinima}}/{{c1.idfilm}}" class="btn btn-warning btn-block">
+												<i class="fa fa-ticket"></i>
+												حجز</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--cinima 2-->
+						<!--******************** cinima2*********************-->
+						<div class="mycinima">
+							<!--****************header cinima 2**************-->
+							<div class="headercinima">
+								<a href="#" div="اضف الى المفضل">
+									<i class="fa fa-heart  " ></i>
+								</a>
+								<a href="#">
+									<img src="img/max4d.jpg" alt="cinima logo" width="50px">
+								</a>
+								<a href="https://www.elcinema.com/theater/3101261/">بوينت MX4D</a>
+								<h6 class="inline subheader">&nbsp;&nbsp;[
+									القاهرة الجديدة . القاهرة . مصر]
+								</h6>
+							</div>
+							<!--***************start the films in cinima 2***************-->
+							<div class="thefilms">
+								<!--*************starty loop Anglar cininma 2 ***********-->
+								<div class="row" ng-repeat="c1 in cinima2">
+									<div class="film col-lg-3 col-sm-6 col-xs-12">
+										<div class="testfix">
+											<div class="img text-center">
+												<div class="thetest">
+													<img ng-src={{c1.img}} alt="anable" >
+													<div class="myhiddenhover text-center">
+														<div class="theheaer">
+															<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+														</div>
+														<div class="thecenter">
+															<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+														</div>
+														<div class="starrate">
+															<span>{{c1.rate}}</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h3 class="text-center">{{c1.namefilm}}</h3>
+											<div class="theinfo">
+												<p>{{c1.nation}} | <span>{{c1.limitage}}</span></p>
+											</div>
+											<a href="#/info/{{c1.idcinima}}/{{c1.idfilm}}" class="btn btn-warning btn-block">
+												<i class="fa fa-ticket"></i>
+												حجز</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--*******************start ccinima 3********************-->
+						<div class="mycinima">
+							<!--****************header cinima 3**************-->
+							<div class="headercinima">
+								<a href="#" div="اضف الى المفضل">
+									<i class="fa fa-heart  " ></i>
+								</a>
+								<a href="#">
+									<img src="img/max4d.jpg" alt="cinima logo" width="50px">
+								</a>
+								<a href="https://www.elcinema.com/theater/3101134/">آيماكس، (أمريكانا بلازا)</a>
+								<h6 class="inline subheader">&nbsp;&nbsp;[
+									القاهرة الجديدة . القاهرة . مصر]
+								</h6>
+							</div>
+							<div class="filtering text-center">
+								<input type="search" placeholder="ابحث عن فلمك  ......" ng-model="searchc3">
+							</div>
+							<!--***************start the films in cinima 2***************-->
+							<div class="thefilms">
+								<!--*************starty loop Anglar cininma 2 ***********-->
+								<div class="row" >
+									<div class="film col-lg-3 col-sm-6 col-xs-12" ng-repeat="c1 in cinima3 |filter : searchc3">
+										<div class="testfix">
+											<div class="img text-center">
+												<div class="thetest">
+													<img ng-src={{c1.img}} alt="anable" >
+													<div class="myhiddenhover text-center">
+														<div class="theheaer">
+															<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+														</div>
+														<div class="thecenter">
+															<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+														</div>
+														<div class="starrate">
+															<span>{{c1.rate}}</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h3 class="text-center">{{c1.namefilm}}</h3>
+											<div class="theinfo">
+												<p>{{c1.nation}} | <span>{{c1.limitage}}</span></p>
+											</div>
+											<a href="#/info/{{c1.idcinima}}/{{c1.idfilm}}" class="btn btn-warning btn-block">
+												<i class="fa fa-ticket"></i>
+												حجز</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--*********************cinima 4 *********************************-->
+						<div class="mycinima">
+							<!--****************header cinima 4**************-->
+							<div class="headercinima">
+								<a href="#" div="اضف الى المفضل">
+									<i class="fa fa-heart  " ></i>
+								</a>
+								<a href="#">
+									<img src="img/90.jpg" alt="cinima logo" width="50px">
+								</a>
+								<a href="https://www.elcinema.com/theater/3101219/">بوينت 90</a>
+								<h6 class="inline subheader">&nbsp;&nbsp;[
+									القاهرة الجديدة . القاهرة . مصر]
+								</h6>
+							</div>
+							<div class="filtering text-center">
+								<input type="search" placeholder="ابحث عن فلمك  ......" ng-model="searchc4">
+							</div>
+							<!--***************start the films in cinima 4***************-->
+							<div class="thefilms">
+								<!--*************starty loop Anglar cininma 4 ***********-->
+								<div class="row" >
+									<div class="film col-lg-3 col-sm-6 col-xs-12" ng-repeat="c1 in cinima4 |filter : searchc4" >
+										<div class="testfix">
+											<div class="img text-center">
+												<div class="thetest">
+													<img ng-src={{c1.img}} alt="anable" >
+													<div class="myhiddenhover text-center">
+														<div class="theheaer">
+															<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+														</div>
+														<div class="thecenter">
+															<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+														</div>
+														<div class="starrate">
+															<span>{{c1.rate}}</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h3 class="text-center">{{c1.namefilm}}</h3>
+											<div class="theinfo">
+												<p>{{c1.nation}} | <span>{{c1.limitage}}</span></p>
+											</div>
+											<a href="#/info/{{c1.idcinima}}/{{c1.idfilm}}" class="btn btn-warning btn-block">
+												<i class="fa fa-ticket"></i>
+												حجز</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--**********************cinima-5**************************-->
+						<div class="mycinima">
+							<!--****************header cinima 5**************-->
+							<div class="headercinima">
+								<a href="#" div="اضف الى المفضل">
+									<i class="fa fa-heart  " ></i>
+								</a>
+								<a href="#">
+									<img src="img/p.jpg" alt="cinima logo" width="50px">
+								</a>
+								<a href="https://www.elcinema.com/theater/3101133/">بلازا، (أمريكانا بلازا)</a>
+								<h6 class="inline subheader">&nbsp;&nbsp;[
+									6 أكتوبر . القاهرة . مصر]
+								</h6>
+							</div>
+							<div class="filtering text-center">
+								<input type="search" placeholder="ابحث عن فلمك  ......" ng-model="searchc5">
+							</div>
+							<!--***************start the films in cinima 5***************-->
+							<div class="thefilms">
+								<!--*************starty loop Anglar cininma 5 ***********-->
+								<div class="row" >
+									<div class="film col-lg-3 col-sm-6 col-xs-12" ng-repeat="c1 in cinima5 |filter : searchc5" >
+										<div class="testfix">
+											<div class="img text-center">
+												<div class="thetest">
+													<img ng-src={{c1.img}} alt="anable" >
+													<div class="myhiddenhover text-center">
+														<div class="theheaer">
+															<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+														</div>
+														<div class="thecenter">
+															<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+														</div>
+														<div class="starrate">
+															<span>{{c1.rate}}</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h3 class="text-center">{{c1.namefilm}}</h3>
+											<div class="theinfo">
+												<p>{{c1.nation}} | <span>{{c1.limitage}}</span></p>
+											</div>
+											<a href="#/info/{{c1.idcinima}}/{{c1.idfilm}}" class="btn btn-warning btn-block">
+												<i class="fa fa-ticket"></i>
+												حجز</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!--*******************************************************************************************************-->
+						<!--**************next show ************************************-->
+						<div class="mycinima">
+					<div class="headercinima text-center">
+						<a href="#" div="اضف الى المفضل">
+							<i class="fa fa-plus-square  " ></i>
+						</a>
+						<h2 class="h1">يتاح قريبا ف سينمات مصر </h2>
+					</div>
+					<div class="thefilms"  ng-init="checked = true">
+						<!--the row-*****************************-->
+						<div class="row">
+<!--							/**************** film1 *******-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/1.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<span>4</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">It Gift With Purchase</h3>
+									<div class="theinfo">
+										<p>احنبى | <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+<!--							/***************film2***************-->
+							<div class="film col-lg-3 col-sm-6  col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/2.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<span>4</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Hit's Man</h3>
+									<div class="theinfo">
+										<p>اجنبى| <span>+18</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--**************thir film***************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/3.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<span>5</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center"><bdi>Leap!</bdi></h3>
+									<div class="theinfo">
+										<p>اجنبى| <span>+22</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--****************film 4**************-->
+							<div class="film col-lg-3 col-sm-6 col-xs-12">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/4.png" alt="anable">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<span>5</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Wind Reive</h3>
+									<div class="theinfo">
+										<p>اجنبى | <span>+12</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--******************film5******************************** -->
+							<div class="film col-lg-3 col-sm-6 col-xs-12 " ng-hide="checked">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/6.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<span>3</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center">Inconceivable</h3>
+									<div class="theinfo">
+										<p>اجنبى | <span>للجمهور</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+							<!--*************************film6*****************-->
+							<div class="film col-lg-3 col-sm-6  col-xs-12" ng-hide="checked">
+								<div class="testfix">
+									<div class="img text-center">
+										<div class="thetest">
+											<img src="img/thenext/7.jpg" alt="anable" width="300px;">
+											<div class="myhiddenhover text-center">
+												<div class="theheaer">
+													<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+												</div>
+												<div class="thecenter">
+													<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+												</div>
+												<div class="starrate">
+													<span>4</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="text-center"> Flatliners</h3>
+									<div class="theinfo">
+										<p>اجنبى | <span>+12</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+								</div>
+							</div>
+						</div>
+						<!--end row*******************************-->
+						
+						<a  class="btn btn-success btn-block btn-lg" id="myclick" ng-show="checked" ng-click = "showhide()">المزيد 2 <i class="fa fa-chevron-down " ></i></a>
+					</div>
+				</div>
+					</div>
+		</section>
+<!--***********************end home view 2 ************************-->

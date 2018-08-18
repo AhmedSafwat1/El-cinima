@@ -1,0 +1,14 @@
+  window.initialize = function() {
+        // code to execute after your JS file referenced in the loadScript function loads
+    }
+
+    var loadScript = function () {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://www.myserver.com/file.js?callback=initialize';
+        document.body.appendChild(script);
+    }
+
+    $scope.$on('$viewContentLoaded', function () {
+        loadScript();
+    });

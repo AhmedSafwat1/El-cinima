@@ -1,0 +1,98 @@
+<!--
+hello
+{{infocinima}}
+*****************
+{{infofilm}}-->
+<!--start view info -->
+<section class="myinfoview">
+	<div class="container">
+		<div class="headertime">
+			<h2 >{{mytime|date:'medium'}}</h2>
+		</div>
+		<!--*************************************************************************-->
+		<div class="myfilminfo">
+			<div class="row">
+				<div class="myfilminfo-img col-lg-4 col-sm-6 col-xs-12">
+				   <div class="testfix">
+						<div class="img text-center">
+							<div class="thetest">
+								<img ng-src={{infofilm.img}} alt="anable">
+								<div class="myhiddenhover text-center">
+									<div class="theheaer">
+0										<a href="#"  div="تايع"><i class="fa fa-bell"></i><span>تابع</span></a>
+									</div>
+									<div class="thecenter">
+										<a href="#"  div="أضف إلى مفضلاتك"><i class="fa fa-heart"></i><span>مفضل</span></a>
+									</div>
+									<div class="starrate">
+										<span>{{infofilm.rate}}</span><i class="fa fa-star fa-3x" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<h3 class="text-center">{{infofilm.namefilm}}</h3>
+									<div class="theinfo">
+										<p>{{infofilm.nation}} | <span>{{infofilm.limitage}}</span></p>
+									</div>
+									<a href="#" class="btn btn-info btn-block">
+										<i class="fa fa-video-camera"></i>
+										مشاهدة الاعلان</a>
+						</div>
+			    </div>
+			</div>
+				<div class="myfilm-desc col-lg-4 col-sm-6 col-xs-12" >
+					<h4 class=""><bdi>{{infofilm.namefilm}}</bdi></h4>
+					<p class="lead">
+						{{infofilm.descrption}}
+					</p>
+					<p class="lead">
+						نوعية الفلم <span>{{infofilm.type}}</span>
+					</p>
+					<p class="lead">مدة الفلم <i class="fa fa-clock-o"></i> <span>
+						{{infofilm.size}}</span></p>
+					<p class="lead">نوع الفلم <span>{{infofilm.nation}}</span></p>
+					<p class="lead">ايرادات الفلم حاليا<span><bdi>{{infofilm.rate * 14815 |currency}}</bdi></span></p>
+				</div>
+			
+		</div>
+		</div>
+		</div>
+		<!--*****************************start check form********************************************-->
+		<div class="headercheck textcenter">
+		   <div class="overlay text-center">
+			   <div class="icon">
+				   <i class="fa fa-user fa-5x"></i>
+			   </div>
+			   <h2 class="h1"><i class="fa fa-info-circle"></i>لاختيارك المقعد يجب ان تملئ البيانات الاتيه</h2>
+		   </div>
+		</div>
+	    <div class="myform text-center">
+			<div class="container">
+				<form role="form">
+				<div class="form-group">
+					<input type="text" name="name" ng-model="mybane" placeholder="اكتب اسمك "   pattern="" required ng-change="chos()">
+				</div>
+				<div class="form-group" ng-init="myselectedday='0'" >
+					<select name="myday"   ng-model="myselectedday" ng-change="chosenday()" >
+						<option value="0" disabled selected>اختر يوم الحجز</option>
+						<option value="1" >الخميس</option>
+						<option value="2">الجمعه</option>
+					</select>
+				   
+				</div>
+				<div class="form-group" ng-init="chosenparty = '' ">
+				   <select name="myparty" ng-model ="chosenparty" ng-change="showchecked()">
+					   <option value="" selected disabled >اختر حفلتك</option>
+                       <option ng-repeat=" x in seclectedday" value="{{x.id}}">{{x.time}}</option>
+				   </select>
+				</div>
+				<div class="form-group" ng-init="thecondit =true">
+					
+				    <a href="#/info/{{cid}}/{{fid}}/checked/{{mybane}}/{{myselectedday-1}}/{{chosenparty}}" class="btn btn-primary" ng-hide="thecondit"><i class="fa fa-ticket"></i>احجز مقعدك</a>
+				</div>
+			</form>
+			</div>
+			
+	    </div>
+					
+</section>
+<!--end view info-->

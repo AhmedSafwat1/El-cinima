@@ -1,0 +1,67 @@
+<!--section view 3-->
+<section class="mychecked">
+	<div class="myheaderchecked">
+		<div class="container">
+		   <ul class="list-unstyled">
+			   <li class="booking-userbar">
+				  <i class="fa fa-film"></i>
+				  <a href="/work/2044463" id="summary_work" target="_blank">It</a> 
+				</li>
+			   <li class="booking-userbar">
+				  <i class="fa fa-map-marker"></i>
+				  <span id="summary_theater">{{mycinima.cinimaname}}</span>
+				</li>
+			   <li class="booking-userbar show-for-medium-up">
+				  <i class="fa fa-calendar-o"></i>
+				  <span id="summary_showtime_day">{{mycinima.day[dayparty].thday}}</span>
+			   </li>
+			   <li class="booking-userbar">
+				  <i class="fa fa-clock-o"></i>
+				  <span id="summary_showtime_time">{{mycinima.day[dayparty].party[partytime].time}}</span>
+				</li>
+			   <li class="booking-userbar">
+				  <i class="fa fa-ticket"></i>
+				  <span id="summary_tickets" ng-bind="numticket"></span>
+				  <span id="summary_seats"></span>
+				</li>
+		   </ul>
+		</div>
+	</div>
+	<div class="myscreen">
+		<div class="container">
+			<div class="myrole text-center">
+				<div><span></span>متاح للحجز</div>
+				<div><span></span>اختيارك</div>
+				<div><span></span>محجوز</div>
+			</div>
+			<div class="thecheckedpostion text-center">
+				<div class="thescreen ">الشاشه</div>
+				<div class="testfix2">
+					<!--*******************************************************************-->
+					<div class="thechair" id="mychair">
+
+				    </div>
+					<!--*****************************************************************-->
+				</div>
+				<hr>
+				<hr>
+				<div class="fotterview">
+					<div class="row">
+						<div class="btton col-lg-2">
+							<a href="" class="btn btn-block btn-danger"><i class="fa fa-times"></i>الغاء </a>
+						</div>
+						<div class="col-lg-8">
+						</div>
+						<div class="btton col-lg-2">
+							<button type="button" class="btn btn-block btn-warning" ><i class="fa fa-ticket"></i> حجز</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--*************************************-->
+	</div>
+
+</section>
+<!--end section view3-->

@@ -1,0 +1,805 @@
+/*my framework*/
+body
+{
+	direction: rtl;
+	padding-top: 64px;
+	font-family: "Droid Arabic Kufi",Arial;
+		
+}
+
+@media (min-width:0px)
+{
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12
+		{
+			float: right !important;
+		}
+} 
+/*
+@media (min-width: 768px)
+{
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
+		{
+			float: right !important;
+		}
+}
+*/
+
+@media (max-width:768px)
+{
+  .thcinima .thefilms .film
+	{
+		padding-bottom: 5px !important;
+	}
+}
+/*end my frame work*/
+
+/*upate bootstrip*/
+/******************nav bar********************/
+.navbar-inverse
+{
+	background-color: #555555;
+	border: none;
+}
+.navbar-brand
+{
+	padding: 10px 15px;
+}
+.nav > li
+{
+	margin-left: 5px;
+}
+.navbar-inverse .navbar-nav > li > a
+{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 19px;
+	font-family: "Droid Arabic Kufi",Arial;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #555;
+	border-top: 2px solid #555;
+	transition: all .8s ease-in-out;
+	border-radius:  4px 5px 5px;
+	
+}
+.navbar-inverse .navbar-nav > li > a:hover
+{
+	background-color: #333;
+	border-color: #fdb73b 
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus
+{
+	background-color: #333333;
+	background-color: #333;
+	border-color: #fdb73b ;
+	
+		
+}
+/***************************************start footer************************/
+/*end update bootstrip*/
+
+/*start nav bar*/
+@media (max-width:768px)
+{
+	.navbar-brand
+	{
+		padding: 1px 15px;
+	}
+	#myNavbar > ul
+	{
+		padding-right: 0px;
+	}
+	.navbar-inverse
+	{
+		border-color: #333;
+		padding: 7px 0px;
+	}
+	.nav > li
+	{
+		margin-left: 0;
+		margin-bottom: 5px;
+	}
+}
+  
+/*end nav bar*/
+/*start footer*/
+footer
+{
+	background-color: #363636;
+	color: #FFF;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+footer .headerfooter
+{
+	padding-top: 20px;
+
+}
+footer  img
+{
+	max-width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+	
+}
+footer .headerfooter .myimage .special
+{
+	margin-bottom: 7px;
+	
+}
+footer .headerfooter .myimage .special a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 0px 2px;
+}
+footer .headerfooter .myimage .special img
+{
+	margin-bottom: 13px !important;
+}
+body > footer > div > hr:nth-child(2)
+{
+	margin-top: 0px;
+	margin-bottom: 11px;
+}
+body > footer > div > hr:nth-child(3)
+{
+	margin-top: 11px;
+}
+footer .mycenterfooter ul li 
+{
+	display: inline-block;
+	padding: 0px 5px;
+		
+}
+footer .mycenterfooter ul li a,.thepostion .thevisivble ul li a
+{
+	color: #FFF;
+	text-decoration: none;
+	transition: color .5s ease-in-out;
+	padding-left: 5px;
+	font-family: "Droid Arabic Kufi",Arial;
+		
+	
+}
+footer .mycenterfooter ul li a:hover ,.thepostion .thevisivble ul li a:hover
+{
+	color:#fdb73b;
+}
+footer .mycenterfooter ul li:not(:last-child):after,.thepostion .thevisivble ul li:not(:last-child):not(:first-child):after
+{
+	content: ".";
+	padding: 0px ;
+		
+}
+footer .endfooter  img
+{
+	margin-bottom: 3px;
+}
+footer .endfooter .copyright,footer .endfooter .ownwr
+{
+	height: 55px;
+	line-height: 55px;
+}
+@media (min-width:768px)
+{
+	 footer .headerfooter .myimage .special
+	{
+		text-align: left !important;
+	}
+}
+
+/*end footer*/
+/*start section the first view */
+.thepostion
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.thepostion .thevisivble h3
+{
+	color: #55acee;
+	margin-bottom: 20px;
+    font-family: "Droid Arabic Kufi",Arial;
+	font-weight: bold;
+		
+}
+.thepostion .thevisivble ul
+{
+	padding-right: 0px;
+}
+.thepostion .thevisivble ul li
+{
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 7px;
+}
+.thepostion .thevisivble ul > li:nth-child(1)
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+.thepostion .thevisivble ul li a
+{
+	color: #55acee;
+	font-size: 17px;
+		
+}
+.thepostion h5
+{
+	font-weight: bold;
+}
+/******************* end header the view*******************************************/
+.thcinima
+{
+	margin-top: 50px;
+}
+.thcinima h2
+{
+	font-weight: bold;
+	font-family: "Droid Arabic Kufi",Arial;
+	color: #55acee;
+}
+.mycinima
+{
+	background-color: #efefef;
+	margin-bottom: 60px;
+		
+}
+.thcinima .mycinima .headercinima
+{
+	padding: 10px ;
+	background-color: #25a9df;
+	
+}
+.thcinima .mycinima .filtering
+{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 100%;
+	margin:40px auto 20px;
+}
+.thcinima .mycinima .filtering input
+{
+	display:inline-block;
+	width: 50%;
+	height: 50px;
+	border: none;
+	background:#fff url(../img/searchicon.png);
+	background-position: 98% center; 
+    background-repeat: no-repeat;
+    padding-right: 40px;
+	border: 2px solid rgba(85, 85, 85, 0.48);
+	outline: none;	
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 2em;
+	transition: color .8s ease-in-out;
+}
+.thcinima .mycinima .filtering input:focus
+{
+	border-color: rgba(51, 51, 51, 0.78)
+}
+.thcinima .mycinima .headercinima .inline
+{
+	display: inline-block;
+}
+.thcinima .mycinima .headercinima a
+{
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+}
+.thcinima > div > div > div > a:nth-child(3)
+{
+	margin-right: 7px;
+	font-weight: bold;
+	font-family: "Droid Arabic Kufi",Arial;
+	font-size: 17px;
+}
+.thcinima > div > div > div > h6
+{
+	font-size: 19px;
+	font-family: "Droid Arabic Kufi",Arial;
+}
+
+.thcinima .mycinima .headercinima a:nth-child(1)
+{
+	margin-left: 7px;
+	padding: 0px 10px;
+	color: #aaaaaa;
+	font-size: 19px;
+	border: 1px solid  #25a9df;
+	
+	
+}
+.thcinima .mycinima .headercinima a:nth-child(1):hover
+{
+	border-color: #aaaaaa;
+}
+body > ng-view > section.thcinima.ng-scope > div > div:nth-child(7) > div.headercinima.text-center > h2
+{
+	display: inline-block;
+	font-weight: bold;
+	color: rgba(59, 235, 253, 0.93)
+}
+body > ng-view > section.thcinima.ng-scope > div > div:nth-child(7) > div.headercinima.text-center > a
+{
+	color: rgba(0, 255, 137, 0.6);
+    font-size: 38px;
+}
+.thcinima .thefilms
+{
+	
+	padding: 20px 35px;
+}
+.thcinima .thefilms .film .testfix,.myfilminfo .testfix 
+{
+	background-color: #FFF;
+	padding: 0px;
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 1px;
+	min-height: 200px;
+}
+.thcinima .thefilms .film img ,.myfilminfo img
+{
+	max-width: 100%;
+	
+}
+.thcinima .thefilms .film .thetest,.myfilminfo .thetest
+{
+	display: inline-block;
+	position: relative;
+}
+.thcinima .thefilms .film  .myhiddenhover ,.myfilminfo .myhiddenhover
+{
+	position: absolute;
+	top: 0px ;
+	left: 0px;
+	background-color:rgba(51,51,51,0.7);
+	opacity: 0;
+	width: 100%;
+	z-index: 999;
+	padding: 20px 0px;
+	height: 100%;
+	-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;	
+}
+.thcinima .thefilms .film .thetest:hover .myhiddenhover,.myfilminfo .thetest:hover .myhiddenhover
+{
+	opacity: 1;
+}
+.thcinima .thefilms .film  .myhiddenhover .theheaer,.myfilminfo .myhiddenhover .theheaer
+{
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+.thcinima .thefilms .film  .myhiddenhover a,.myfilminfo .myhiddenhover a
+{
+	text-decoration: none;
+	color: #AAA;
+	transition: color .5s ease-in-out;
+}
+.thcinima .thefilms .film  .myhiddenhover a:hover ,.myfilminfo .myhiddenhover a:hover
+{
+	color: #fdb73b;
+}
+.thcinima .thefilms .film  .myhiddenhover .thecenter,.myfilminfo .myhiddenhover .thecenter
+{
+	margin-bottom: 20%;
+}
+.thcinima .thefilms .film  .myhiddenhover .starrate ,.myfilminfo .myhiddenhover .starrate
+{
+	font-size: 29px;
+	font-weight: bold;
+	color: gold;
+	
+}
+.thcinima .thefilms .film  .myhiddenhover .starrate span ,.myfilminfo .myhiddenhover .starrate span 
+{
+	color: #f0ad4e
+}
+.thcinima .thefilms .film  .myhiddenhover .starrate .rating-input .glyphicon
+{
+	margin-left: 2px;
+	color: #AAA;
+}
+.thcinima .thefilms .film h3,.myfilminfo h3
+{
+	color:#25a9df
+}
+.thcinima .thefilms .film .theinfo,.myfilminfo .theinfo
+{
+	margin-top: 30px;
+	padding-right: 1%;
+}
+.thcinima .thefilms .film .theinfo p ,.myfilminfo .theinfo p
+{
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 0px 5px;
+	color: #777;
+	font-weight: bold;
+	font-size: 19px;
+}
+.thcinima .thefilms .film .theinfo p span,.myfilminfo .theinfo p span
+{
+	color: #e84c3d;
+}
+.thcinima .thefilms .film  a,.myfilminfo  a
+{
+	width: 98%;
+	margin: 10px auto 3px;;
+	font-size: 19px;
+
+}
+@media (min-width:991px) and (max-width:1199px){
+	
+	.thcinima .thefilms .film .testfix
+	{
+		padding-top: 20px;
+	}
+}
+@media (min-width:434px) and (max-width:767px)
+{ 
+	.thcinima .thefilms .film .testfix
+	{
+		padding-top: 20px;
+	}
+	.myinfoview .headertime
+	{
+		text-align: center;
+	}
+	.myinfoview .myfilm-desc
+	{
+		text-align: center;
+	}
+	
+	
+}
+@media (min-width:0px) and (max-width:991px)
+{
+	.thcinima .mycinima .filtering input
+	{
+		width: 90%;
+		margin: auto;
+	}
+}
+@media (max-width:434px)
+{
+	footer .endfooter .copyright, footer .endfooter .ownwr
+	{
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	body > footer > div > div.endfooter > div > div.col-md-4.ownwr.text-center > span
+	{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.thcinima .thefilms .film  .myhiddenhover .starrate 
+	{
+		font-size: 20px;
+		margin-top: 18%;
+	}
+	.thcinima .thefilms .film  .myhiddenhover .theheaer
+	{
+		margin-top: 15%;
+		margin-bottom: 15%;
+	}
+	.thcinima .thefilms .film  .myhiddenhover .thecenter
+	{
+		margin-bottom: 18%;
+	}
+	.myinfoview .myfilm-desc
+	{
+		text-align: center;
+	}
+	.myinfoview .headertime h2
+	{
+		text-align: center;
+		font-size: 17px;
+	}
+	.mychecked .myheaderchecked
+	{
+		display: none!important;
+	}
+}
+@media (max-width:277px) {
+	.thcinima .thefilms .film  .myhiddenhover .theheaer
+	{
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	.thcinima .thefilms .film  .myhiddenhover .thecenter
+	{
+		margin-bottom: 10%;
+	}
+}
+/*
+#myNavbar > ul
+{
+	padding-right: 0px;
+}
+*/
+/*end section the first view */
+
+/**************************************start info view*******************************************************/
+.myinfoview
+{
+	margin-top: 80px ;
+	margin-bottom: 40px;
+}
+.myfilminfo
+{
+	margin-top: 40px;
+}
+.myinfoview .myfilm-desc p,.myinfoview .myfilm-desc h4
+{
+	margin-bottom: 30px;
+}
+.myinfoview .myfilm-desc span
+{
+	display: inline-block;
+	color: crimson;
+	margin-right: 10px;
+	font-style: italic;
+}
+.myinfoview .headercheck
+{
+	background: url(../img/slide2.jpg) center center fixed no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	position: relative;
+	margin-top: 40px;
+	border-bottom: 2px solid #333;
+}
+.myinfoview .headercheck .overlay 
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 200px;
+	background-color: rgba(20, 18, 18, 0.68);
+	color: #f1f1f1;
+	padding-top: 10px;
+}
+.myinfoview .headercheck .overlay .icon
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+@media (max-width:555px)
+{
+	.myinfoview .headercheck .overlay
+	{
+	  font-size: 16px;
+	}
+	.myinfoview .headercheck .overlay .h1
+	{
+	  font-size: 28px;
+	}
+	
+}
+.myform
+{
+	padding-top: 50px;
+}
+.myform .form-group
+{
+	width: 70%;
+	margin:50px auto;
+	text-align: center;
+	font-size: 25px;
+	
+}
+.myform .form-group input
+{
+	width: 100%;
+	height: 40px;
+	padding-right: 10px;
+	border-radius: 3px;
+	border: none;
+	border-bottom: 3px solid #25a9df
+}
+.myform .form-group select
+{
+	width: 40%;
+	height: 40px;
+	border: none;
+	border-bottom: 3px solid #25a9df
+}
+.myform a
+{
+   display: inline-block;
+	width: 100%;
+	height: 40px;
+	font-size: 29px;
+	font-weight: bold;
+	line-height: 28px;
+}
+@media (max-width:767px)
+{
+	.myform .form-group{
+		width: 100%;
+	}
+	.myform .form-group select
+	{
+		width: 70%;
+	}
+}
+/************************************** end info view *******************************************************/
+/***********************start third view ******************/
+.mychecked .myheaderchecked
+{
+	position: fixed;
+	background-color: rgba(117, 115, 116, 0.83);
+	color: #FFF;
+	width: 100%;
+	z-index: 9999;
+	
+	
+	
+}
+.mychecked .myheaderchecked ul
+{
+	margin-bottom: 0px;
+}
+.mychecked .myheaderchecked li
+{
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.mychecked .myheaderchecked li:not(:last-child):after
+{
+	content: "|";
+	color: darkcyan;
+}
+.mychecked .myscreen
+{
+	padding-top:100px;
+}
+.mychecked .myscreen .myrole >div
+{
+	display: inline-block;
+	padding: 5px;
+	font-size: 17px;
+}
+.mychecked .myscreen .myrole  span
+{
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.mychecked .myscreen .myrole >div:nth-child(1) span
+{
+	border: 1px solid #25a9df;
+	
+}
+.mychecked .myscreen .myrole >div:nth-child(2) span
+{
+	border: 1px solid #25a9df;
+	background-color: #25a9df;
+	
+}
+.mychecked .myscreen .myrole >div:nth-child(3) span
+{
+	border: 1px solid #ddd;
+	background-color: #ddd;
+	
+}
+.mychecked .myscreen .thecheckedpostion
+{
+	background-color: #f6f6f6;
+	
+}
+
+.mychecked .myscreen .thescreen
+{
+	background-color: #25a9df;
+	border-bottom: 4px solid #1b88b5;
+	width: 70%;
+	height: 40px;
+	border-top-left-radius:20px;
+	border-top-right-radius: 20px; 
+	margin: auto;
+	font-size: 26px;
+	color: #fff;
+	
+
+}
+.myselected
+{
+	background-color:#25a9df;
+	    color: aliceblue;
+}
+.myselected:hover
+{
+	box-shadow: none !important;
+}
+.mychecked .myscreen .thechair
+{ 
+	width: 670px;
+	margin: 86px auto;
+	text-align: left;
+	padding-left: 5px;
+}
+.mychecked .myscreen .thechair >div
+{
+	display: inline-block;
+	width: 25px ;
+	height: 25px;
+	border: 1px solid #25a9df;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	transition: all .5s ease-in-out;
+		
+}
+.mychecked .myscreen .thechair >div:not(.disabled):hover
+{
+	    box-shadow: 0 1px 4px rgba(0,105,214,0.25);
+	    background-color:#25a9df;
+	    color: aliceblue;
+	  cursor: pointer;
+
+
+}
+.disabled
+{
+	cursor: not-allowed;
+	background-color: #DDD;
+	border-color: #DDD !important;
+	
+}
+.disabled:hover
+{
+	box-shadow: none !important;
+}
+@media (max-width:766px){
+	.testfix2
+{
+	overflow-x: scroll;
+}
+}
+.thecheckedpostion hr
+{
+	height: 2px;
+	background: #25a9df;
+}
+.fotterview
+{
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+.fotterview .btton:last-of-type
+{
+	padding-left: 25px ;
+}
+.fotterview .btton:last-of-type .btn
+{
+	
+	font-size: 19px!important;
+	font-weight: bold!important;
+}
+.fotterview .btton:first-of-type
+{
+	padding-right: 25px ;
+}
+.fotterview .btton:first-of-type .btn
+{
+	
+	font-size: 19px!important;
+	font-weight: bold!important;
+}
+/***********************end third view ********************/
